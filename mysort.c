@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define SIZE 1000000  // 1 million elements
+#define SIZE 3000000  // 1 million elements
 
 // Swap two elements
 void swap(int *a, int *b) {
