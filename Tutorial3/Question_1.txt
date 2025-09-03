@@ -1,0 +1,15 @@
+The observations for the provided code are that the number of philosophers are initiated to 5 and the chopstick is locked
+with the mutex. Each of the philosopher is declared unique with their ids. The philosopher thinks, sleeps for a second then 
+becomes hungry and then picks up the left chopstick first then the right chopstick, eats and then puts the chopsticks to the 
+rest. Then prints finished eating. The purpose of the mutex lock is that the no two philosophers are trying to hold the same 
+chopstick at the same time. The loop is such that the philosopher are being entered infinitely, so the loop runs indefinitely.
+
+The changes can be made to the mutex locks i.e to which chopstick they are locking to make most of the philosophers eat at
+the same time. This make us to not to waste the resources. Some of the procedures are :
+
+1.Even and Odd solution(Even picks the left chopstick first and the odd chopstick pick right)
+2.Hierarchy of the chopsticks by labelling it. lowen index picked first.
+3.Allowing N-1 philosophers to eat at the same time, then at least one of the user shall eat that particular time.(this
+method does not lead to any circular wait but will waste the resources much).
+
+Even and Odd solution is implemented in Q1.c file

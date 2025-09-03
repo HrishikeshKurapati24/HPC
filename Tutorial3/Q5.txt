@@ -1,0 +1,6 @@
+The code is for a threaded counter, the expected output should be = number of threads * increment_val
+In this case the number of threads are 2 and the increment_val is 100000.
+So the expected value is 200000.
+But in practical as they are parallelized using the threads, as soon as the thread is free it prints and goes back to original 
+func so we might not get the expected value every time.
+The practical value is less than or equal to the expected value.
